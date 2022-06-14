@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&family=Updock&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #9993a1;
+    text-decoration: none;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    background-color:#180a29;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.main img{margin-top: 100px;}
+
+.main form{
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.main form div{
+    display: block;
+    background-color: aliceblue;
+}
+
+.main form input{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background: none;
+    border-width: thin;
+    border-color: transparent transparent rgba(230, 238, 244, 0.5);
+    margin-top: 20px;
+    padding:0 10px;
+    font-size: 12px;
+    transition: .5s;
+    outline: none;
+    align-items: flex-end;
+}
+
+.main form button{
+    padding:20px;
+    margin-top:20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:20px;
+    border: none;
+    width:300px;
+    cursor: pointer;
+    background-color: #00eb84;
+    color: #160727;
+    font-size:16.5px;
+    text-align: center;
+    display: block;
+    transition: .5s;
+}
+
+.main form button:hover{ background-color: #00a55d;}
+
+.main form a{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 5px;
+    font-size: 12.5px;
+}
+
+.main .bx{
+    font-size: 35px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 30px 5px;
+    cursor: pointer;
+}
+
+.main .box-criar p{
+    color: white;
+    font-size: 14px;
+    margin: auto;
+}
+
+.main .box-criar p a{ color: #00eb84;}
+
+.main .box-criar .line{
+    width: 40%;
+    height: 1px;
+    margin: 50px auto;
+    background-color: #9993a1;
+}
+
+.main .box-criar .box-apps span{
+    display: block;
+    font-size: 14px;
+    color: white;
+}
+
+.main .box-criar .box-apps img{
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.main .box-criar .box-apps .ajuda{
+    color: #00eb84;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    .main form button{
+        width: 100%;
+    }
+
+    .main .box-criar .line{
+        width: 90%;
+        height: 1px;
+        margin: 50px auto;
+        background-color: #9993a1;
+    }
+}

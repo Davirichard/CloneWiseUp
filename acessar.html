@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acessar clone</title>
+
+    <!--========== BOXICONS CSS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/acessar.css">
+</head>
+<script>
+    function entrar1(){
+        var email = document.getElementById('e-mail')
+        email.style.backgroundColor = 'white'
+        email.style.borderRadius = '30px'
+    }
+
+    function sair1(){
+        var email = document.getElementById('e-mail')
+        email.style.background = 'none'
+        email.style.borderRadius = '0px'
+    }
+
+    function entrar2(){
+        var senha = document.getElementById('senha')
+        senha.style.backgroundColor = 'white'
+        senha.style.borderRadius = '30px'
+    }
+
+    function sair2(){
+        var senha = document.getElementById('senha')
+        senha.style.background = 'none'
+        senha.style.borderRadius = '0px'
+    }
+</script>
+<body>
+    <main class="main">
+        <img src="imagens/wup-logo-online.svg" alt="" srcset="">
+        <form>
+            <input type="text" placeholder="Insira seu email" id="e-mail" onclick="entrar1()" onmouseout="sair1()">
+            <input type="password" placeholder="Insira sua senha" id="senha" onclick="entrar2()" onmouseout="sair2()">
+            <a href="#">Esqueceu sua senha?</a>
+            <button type="submit">Acessar</button>
+            <span>ou</span>
+        </form>
+        <i class='bx bxl-google'></i>
+        <i class='bx bxl-facebook-circle'></i>
+        <div class="box-criar">
+            <p>Não tem login?<a href="#"> Cadastre-se</a></p>
+            <div class="line"></div>
+            <div class="box-apps">
+                <span>Estude pelo Celular. Baixe agora o App.</span>
+                <img src="imagens/cadastro/gplayblack.c2f38f52.svg" alt="">
+                <img src="imagens/cadastro/appstoreblack.b0a49a58.svg" alt="">
+                <p class="ajuda">Central de ajuda</p>
+            </div><!--apps-->
+        </div>
+    </main>
+</body>
+</html>
